@@ -1,0 +1,549 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyP1y3aVwACSTGOgvJZIV6lF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/eberthrosales/Tarea01fpEERC/blob/main/Ejercicios%20de%20programacion\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "EJERCICIOS DE PROGRAMACION"
+      ],
+      "metadata": {
+        "id": "rsj8lOoFywwZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.1 Realice un diagrama de flujo y pseudocódigo que representen el algoritmo para obtener el área de un triángulo."
+      ],
+      "metadata": {
+        "id": "gFI8nHKJxRuy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir valores\n",
+        "base:float\n",
+        "altura:float\n",
+        "#Datos de entrada\n",
+        "base=float(input(\"ingrese la base\"))\n",
+        "altura=float(input(\"ingrese la altura\"))\n",
+        "#Proceso\n",
+        "area=base*altura/2\n",
+        "#Datos de salida\n",
+        "print(f\"area del triangulo es {area}\")"
+      ],
+      "metadata": {
+        "id": "ZHVh1bccxW3H",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c7594878-2fcc-4f55-e550-9c28a758c4ac"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese la base19\n",
+            "ingrese la altura15\n",
+            "area del triangulo es 142.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.2 Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad de dinero en soles realice un diagrama de flujo y pseudocódigo que represente un algoritmo para tal fin. "
+      ],
+      "metadata": {
+        "id": "-TGcpeWTXxcX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "soles:float\n",
+        "dolares:float=3.80\n",
+        "#Datos de entrada\n",
+        "soles=float(input(\"ingrese el monto de soles:\"))\n",
+        "#Proceso\n",
+        "dolares=(soles/dolares)\n",
+        "#Datos de salida\n",
+        "print(f\"la cantida de dolares {dolares}\")"
+      ],
+      "metadata": {
+        "id": "_1hgn-IRXI0Q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.3 Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron.  Realice el diagrama de flujo y pseudocódigo que represente el algoritmo para solucionar este problema."
+      ],
+      "metadata": {
+        "id": "Td_nQLHKYW2O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir valores\n",
+        "ea:float\n",
+        "nacimiento:float\n",
+        "#Datos de entrada\n",
+        "nacimiento=float(input(\"ingrese el año de nacimiento:\"))\n",
+        "#Proceso\n",
+        "ea=(2022-nacimiento)\n",
+        "#Datos de salida\n",
+        "print(f\"la edad actual {ea}\")"
+      ],
+      "metadata": {
+        "id": "3CNeAVq4Yd2Y"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.4 Un estacionamiento requiere determinar el cobro que debe aplicar a las personas que lo utilizan. Considere que el cobro es con base en las horas que lo disponen y que las fracciones de hora se toman como completas y realice un diagrama de flujo y pseudocódigo que represente el algoritmo que permita determinar el cobro."
+      ],
+      "metadata": {
+        "id": "Bm3hIc35vErl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir valores\n",
+        "valorhora:float\n",
+        "he:float\n",
+        "total:float\n",
+        "#Datos de entrada\n",
+        "valorhora=float(input(\"ingrese el cobro por hora:\"))\n",
+        "he=float(input(\"ingrese la horas estacinadas\"))\n",
+        "#Proceso\n",
+        "total=valorhora*he\n",
+        "#Datos de salida\n",
+        "print(f\"el cobro es {total}\")"
+      ],
+      "metadata": {
+        "id": "egXK--6CVUjR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.5 Constructoras Juliaca requiere determinar cuánto cobrar por trabajos de pintura. Considere que se cobra por m2 y realice un diagrama de flujo y pseudocódigo que represente el algoritmo que le permita ir generando presupuestos para cada cliente."
+      ],
+      "metadata": {
+        "id": "ZhfMYY6Lzpuo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir valores\n",
+        "cobro:float=10\n",
+        "m2:float\n",
+        "presupuesto:float\n",
+        "#Datos de entrada\n",
+        "cobro=int(input(\"¿cuanto cobra por m2?\"))\n",
+        "m2=int(input(\"¿cuantos metros cuadrados tiene su casa?\"))\n",
+        "#Proceso\n",
+        "presupuesto=cobro*m2\n",
+        "#Datos de salida\n",
+        "print(f\"presupuesto: {presupuesto}\")"
+      ],
+      "metadata": {
+        "id": "1-ZwA3de0XW4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.6 Se requiere determinar la hipotenusa de un triángulo rectángulo ¿cómo sería el diagrama de flujo y el pseudocódigo que represente el algoritmo para obtenerla? Recuerde que por Pitágoras c^ {2} =a^ {2} +b^ {2}"
+      ],
+      "metadata": {
+        "id": "2xTMR6GaLwwT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#referenciar libreria\n",
+        "import math\n",
+        "#Definir variables\n",
+        "ladoA:float\n",
+        "ladoB:float\n",
+        "hipotenusa:float\n",
+        "#Datos de entrada\n",
+        "ladoA=float(input(\"Ingrese el lado A del Triangulo:\"))\n",
+        "ladoB=float(input(\"Ingrese el lado B del Triangulo:\"))\n",
+        "#Proceso\n",
+        "hipotenusa=math.sqrt(math.pow(ladoA,2)+math.pow(ladoB,2))\n",
+        "#Datos de salida\n",
+        "print(f\"La hipotenusa del triangulo rectangulo es: {hipotenusa}\")"
+      ],
+      "metadata": {
+        "id": "cF_H2qcjLx6V"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.7 Una compañía de autobuses requiere determinar el costo que tendrá el boleto de un viaje, esto basado en los kilómetros por recorrer y el costo es por kilómetro. Realice un diagrama de flujo y pseudocódigo que representen el algoritmo para tal fin."
+      ],
+      "metadata": {
+        "id": "mcOm21XTU9DX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir valores\n",
+        "cobrokilometros:float\n",
+        "cobro:float\n",
+        "kilometros:float\n",
+        "#Datos de entrada\n",
+        "cobrokilometros=float(input(\"introduzca el costo por kilómetros: \"))\n",
+        "kilometros=float(input(\"introduzca cuántos kilómetros tiene su viaje: \"))\n",
+        "#Proceso\n",
+        "cobro=cobrokilometros*kilometros\n",
+        "#Datos de salida\n",
+        "print(f\"el costo del boleto de su viaje es de: {cobro}\")"
+      ],
+      "metadata": {
+        "id": "LhMxTOQEVDk9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.8 Se requiere determinar el tiempo que tarda una persona en llegar de una ciudad a otra en bicicleta, considerando que lleva una velocidad constante. Realice un diagrama de flujo y pseudocódigo que represente el algoritmo para tal fin. "
+      ],
+      "metadata": {
+        "id": "yLwiQWtUW56_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "distancia:float\n",
+        "velocidad:float=7\n",
+        "tiempo:float\n",
+        "#Datos de entrada\n",
+        "distancia=float (input(\"introduzca la distancia: \"))\n",
+        "#Proceso\n",
+        "tiempo=distancia/velocidad\n",
+        "#Datos de salida\n",
+        "print(f\"el tiempo que tarda la persona en llegar a su destino es: {tiempo}\")"
+      ],
+      "metadata": {
+        "id": "nqBiLUj7W-r1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.9 Se requiere determinar el costo que tendrá, el realizar una llamada telefónica con base en el tiempo que dura la llamada y el costo es por minuto. realice un diagrama de flujo y pseudocódigo que representen el algoritmo para tal fin."
+      ],
+      "metadata": {
+        "id": "4Ujt1ea2aijk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "x:float\n",
+        "costo:float\n",
+        "segundos: float\n",
+        "minutos:float\n",
+        "#Datos de entrada\n",
+        "segundos=float(input(\"introduzca el tiempo de la llamada en segundos: \"))\n",
+        "costo=float(input(\"introduzca el costo por cada minuto: \"))\n",
+        "#Proceso\n",
+        "minutos=segundos/60\n",
+        "x=costo*minutos\n",
+        "#Datos de salida\n",
+        "print(f\"el costo total de la llamada es: {x}\")"
+      ],
+      "metadata": {
+        "id": "Qt_899m8aknE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.10 Seda Juliaca requiere determinar el pago que debe realizar una persona por el total de metros cúbicos de consumo de agua. Realice un diagrama de flujo y pseudocódigo que represente el algoritmo que permita determinar ese pago. "
+      ],
+      "metadata": {
+        "id": "0G5zknY-ezfy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "litros:float\n",
+        "pl:float\n",
+        "m3:float\n",
+        "total:float\n",
+        "#Datos de entrada\n",
+        "litros=float(input(\"Ingrese la cantidad de litros: \"))\n",
+        "pl=float(input(\"Ingrese el pago por m^3: \"))\n",
+        "#Proceso\n",
+        "m3=litros/1000\n",
+        "total=pl*m3\n",
+        "#Datos de salida\n",
+        "print(f\"El pago total es:{total}\")"
+      ],
+      "metadata": {
+        "id": "Pv7nyFDne1tk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.11 Electro Puno requiere determinar el pago que debe realizar una persona por el consumo de energía eléctrica, la cual se mide en kilowatts(KW).  Realice un diagrama de flujo y pseudocódigo que represente el algoritmo que permita determinar ese pago. "
+      ],
+      "metadata": {
+        "id": "3RGShxaVgNwe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "KW:float\n",
+        "PKW:float\n",
+        "TOTAL:float\n",
+        "#Datos de entrada\n",
+        "KW=float(input(\"Ingrese los kilowatts consumidos: \"))\n",
+        "PWK=float(input(\"Ingrese el pago por kilowatts: \"))\n",
+        "#Proceso\n",
+        "TOTAL=KW*PWK\n",
+        "#Datos de salida\n",
+        "print(f\"El total a pagar es: {TOTAL}\")"
+      ],
+      "metadata": {
+        "id": "9xgUG_06gQ2R"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.12 Realice un diagrama de flujo y pseudocódigo que representen el algoritmo para determinar Cuánto debe pagar finalmente una persona por un artículo equis, Considerando qué tiene un descuento de 20%, y debe pagar 18% de IGV (debe Mostrar el precio con descuento y el precio final)"
+      ],
+      "metadata": {
+        "id": "uJfVM6qIYPIg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "4O3GmcnxWwgm"
+      },
+      "outputs": [],
+      "source": [
+        "#Definir variables\n",
+        "descuento:float=0.20\n",
+        "igv:float=0.18\n",
+        "pbase:float\n",
+        "pcd:float\n",
+        "pf:float\n",
+        "#Datos de entrada\n",
+        "pbase=float(input(\"Ingrese el precio base del articulo:\"))\n",
+        "#Proceso\n",
+        "pcd=pbase-(pbase*descuento)\n",
+        "igv=pcd*0.18\n",
+        "pf=pcd+igv\n",
+        "#Datos de salida\n",
+        "print(f\"El precio con descuento es: {pcd}\")\n",
+        "print(f\"Elprecio final es: {pf}\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.13 Realice un diagrama de flujo y pseudocódigo que represente el algoritmo para determinar cuánto dinero ahorra una persona en un año, si considera que cada semana ahorra 15% de su sueldo (considere cuatro semanas por mes y que no cambia el sueldo). "
+      ],
+      "metadata": {
+        "id": "pL-OLiYkrvgc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "SPS:float\n",
+        "Total:float\n",
+        "#Datos de entrada\n",
+        "SPS=float(input(\"Ingrese el sueldo por semana: \"))\n",
+        "#Proceso\n",
+        "Total=(SPS*4)*12*0.15\n",
+        "#Datos de salida\n",
+        "print(f\"Ahorra por año : {Total} soles\")"
+      ],
+      "metadata": {
+        "id": "A8FhJUQJr2Fu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.14 Una empresa desea determinar el monto de un cheque que debe proporcionar a uno de sus empleados que tendrá que ir por equis número de días a la ciudad de Lima; los gastos que cubre la empresa son:  Hotel, comida y 100 soles diarios para otros gastos.  el monto debe estar desglosado para cada concepto realice un diagrama de flujo y pseudocódigo que represente el algoritmo para determinar el monto del cheque"
+      ],
+      "metadata": {
+        "id": "awr2ZRO90QdY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "dias:float\n",
+        "gh:float\n",
+        "gc:float\n",
+        "total:float\n",
+        "H:float\n",
+        "C:float\n",
+        "O:float\n",
+        "#Datos de entrada\n",
+        "dias=float(input(\"Ingrese los dias de viaje: \"))\n",
+        "gc=float(input(\"Ingrese el gasto por comida diarios: \"))\n",
+        "gh=float(input(\"Ingrese el gasto del hotel diarios: \"))\n",
+        "#Proceso\n",
+        "H=gh*dias\n",
+        "C=gc*dias\n",
+        "O=100*dias\n",
+        "total=H+C+O\n",
+        "#Datos de salida\n",
+        "print(f\"El total de gasto por comida diarios es: {C}\")\n",
+        "print(f\"El total de gasto por hospedaje diario es: {H}\")\n",
+        "print(f\"El total de otros gastos es: {O}\")\n",
+        "print(f\"El total del gasto del viaje es: {total}\")"
+      ],
+      "metadata": {
+        "id": "xlApU0hd0UjW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.15 Se desea calcular la potencia eléctrica de un circuito de la figura 2.6 realice un diagrama de flujo y el pseudocódigo que representen el algoritmo para resolver el problema. Considere que: P=V*I y V=R*L"
+      ],
+      "metadata": {
+        "id": "nsGBPCX4ap3n"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Definir variables\n",
+        "intensidad:float\n",
+        "resistencia:float=4\n",
+        "potencia:float\n",
+        "#Datos de entrada\n",
+        "intensidad=float(input(\"Ingrese la intensidad\"))\n",
+        "#proceso\n",
+        "potencia=resistencia*(intensidad*intensidad)\n",
+        "#Datos de salida\n",
+        "print(f\"la potencia es: {potencia}\")"
+      ],
+      "metadata": {
+        "id": "2ppBFjkCXBqZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.16 Realice el diagrama de flujo y pseudocódigo que representen el algoritmo para determinar el promedio que obtendrá un alumno considerando que realiza tres exámenes, de los cuales el primero y el segundo tienen una ponderación de 25%, Mientras que el tercero es de 50%."
+      ],
+      "metadata": {
+        "id": "EG89IZ9qKpJj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Declarar Variables\n",
+        "nota1:float\n",
+        "nota2:float\n",
+        "nota3:float\n",
+        "promFinal:float\n",
+        "#Datos de Entrada\n",
+        "nota1=float(input(\"Ingrese Nota 01:\"))\n",
+        "nota2=float(input(\"Ingrese Nota 02:\"))\n",
+        "nota3=float(input(\"Ingrese Nota 03:\"))\n",
+        "#Proceso\n",
+        "promedioFinal=nota1*0.25+nota2*0.25+nota3*0.50\n",
+        "#Datos de Salida\n",
+        "print(f\"El promedio de alumno es: {promedioFinal}\")"
+      ],
+      "metadata": {
+        "id": "_FefKXlLKqh3"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
