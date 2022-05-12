@@ -1,5 +1,7 @@
 package EstRepetitivas;
 
+import java.util.Scanner;
+
 public class EjerciciosR {
 
     public static void imprimirWhileN1_20() {
@@ -22,10 +24,24 @@ public static void imprimirForN1_20() {
     }
     
 }
+public static void nombrevertical() {
+    Scanner lt=new Scanner(System.in);
+    System.out.println("Ingrese su nombre:");
+    String nombre=lt.next();
+    for (int i = 0; i < nombre.length(); i++) {
+        System.out.println(nombre.charAt(i));
+    } 
+        
+}
 
 public static void main(String[]args) {
-    System.out.println("Imprime While:"); imprimirWhileN1_20();
+    /*System.out.println("Imprime While:"); imprimirWhileN1_20();
     System.out.println("Imprime Do While:"); imprimirDoWhileN1_20();
-    System.out.println("Imprime for"); imprimirForN1_20();
+    System.out.println("Imprime for"); imprimirForN1_20();*/
+    
+    nombrevertical();
+
     }
+
 }
+
