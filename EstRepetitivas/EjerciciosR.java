@@ -24,11 +24,11 @@ public static void imprimirForN1_20() {
     }
     
 }
-public static void nombrevertical() {
+public static void nombreinvertido() {
     Scanner lt=new Scanner(System.in);
     System.out.println("Ingrese su nombre:");
     String nombre=lt.next();
-    for (int i = 0; i < nombre.length(); i++) {
+    for (int i = nombre.length()-1; i >=0; i--) {
         System.out.println(nombre.charAt(i));
     } 
         
@@ -39,7 +39,7 @@ public static void main(String[]args) {
     System.out.println("Imprime Do While:"); imprimirDoWhileN1_20();
     System.out.println("Imprime for"); imprimirForN1_20();*/
     
-    nombrevertical();
+    nombreinvertido();
 
     }
 
