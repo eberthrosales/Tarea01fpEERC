@@ -13,7 +13,7 @@ public class Graficarletras {
         int numFilLinea=leerT.nextInt();
         int medio=cantF+1;
         for (int f = 1; f <= cantF; f++) {
-            for (int c = 1; c <= 2*cantF; c++) {
+            for (int c = 1; c <= 2*cantF+1; c++) {
                 if (f==1 && medio==c ) {
                     System.out.print("*");
                 }else if(c==medio-f && f>1){
