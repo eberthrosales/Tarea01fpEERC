@@ -29,9 +29,9 @@ public class VectoresEjemplo {
         p[0].codigo="202211956";
         p[0].nombres="Eberth Emmanuel Rosales Castillo";
         p[0].asistencia=true;
-        Persona[] pp={
-        new Persona("202012374", "Alejo Castillo Cristhian Brandolyn ",true)
-        new Persona("202212437", "Arce Mayta Efrain Nayder ",true) }
+        //Persona[] pp={
+        //new Persona("202012374", "Alejo Castillo Cristhian Brandolyn ",true)
+        //new Persona("202212437", "Arce Mayta Efrain Nayder ",true) }
         
     }
 
