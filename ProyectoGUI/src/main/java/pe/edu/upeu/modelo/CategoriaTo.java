@@ -1,18 +1,18 @@
 package pe.edu.upeu.modelo;
 
 /**
- * CategoriaTo
+ * CategoriaTO
  */
-public class CategoriaTo {
+public class CategoriaTO {
+   public String idCat;
+   public String nombreCat;
 
-    public String idCat;
-    public String nombreCat;
-
-    
-    public CategoriaTo(String idCat, String nombreCat) {
+    public CategoriaTO(String idCat, String nombreCat) {
         this.idCat = idCat;
         this.nombreCat = nombreCat;
     }
+
+
     public String getIdCat() {
         return idCat;
     }
@@ -25,7 +25,6 @@ public class CategoriaTo {
     public void setNombreCat(String nombreCat) {
         this.nombreCat = nombreCat;
     }
-    
 
 
 }
