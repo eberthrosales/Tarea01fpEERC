@@ -37,7 +37,7 @@ public class Ejer1xEERC {
         //datos de salida
         System.out.println(estado);
     }
-    public static void ejer1xEERC() {
+    public static void ejer2xEERC() {
         //definir variables
         double precio,igv,descuento,total,preFi;
         //datos de entrada
@@ -61,7 +61,7 @@ public class Ejer1xEERC {
         System.out.println("El descuento total es: "+descuento);
         System.out.println("El total a pagar es: "+preFi);
 }
-    public static void ejer1xEERC() {
+    public static void ejer3xEERC() {
         //definir variables
        double num1,num2,total,signo;
        //datos de entrada
@@ -90,7 +90,7 @@ public class Ejer1xEERC {
        //datos de salida
        System.out.println("El resultado es: "+total);
    }
-    public static void ejer1xEERC() {
+    public static void ejer4xEERC() {
         //definir variable
         double edad;
         String mensaje,genero;
@@ -119,9 +119,9 @@ public static void main(String[] args) {
         numero=lt.nextInt();
         switch (numero) {
             case 1: ejer1xEERC(); break;
-            case 2: ejer1xEERC(); break;
-            case 3: ejer1xEERC(); break;
-            case 4: ejer1xEERC(); break;
+            case 2: ejer2xEERC(); break;
+            case 3: ejer3xEERC(); break;
+            case 4: ejer4xEERC(); break;
             default: break;
         }
 }

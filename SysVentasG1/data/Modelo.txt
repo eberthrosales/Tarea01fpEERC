@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 M1	Cuello V
-=======
-M1	Cuello V
->>>>>>> 81d9b4a7bdeb7f8cabf20ea69ae07f83da45b643
